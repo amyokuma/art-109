@@ -1,0 +1,20 @@
+/* CSS resets */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* General CSS */
+
+body {
+  background-color: #f5f5dc;
+  font-family:;
+}
+
+header {
+  padding: 80px;
+  margin-bottom: 40px;
+  background-color: #fff;
+  text-align: center;
+}
