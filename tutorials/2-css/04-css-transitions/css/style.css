@@ -1,0 +1,37 @@
+.title {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.square {
+    background-color: pink;
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    margin: 50px auto;
+    transition: all 1s;
+}
+
+.square:hover {
+    background-color: lightblue;
+    transform: rotate(30deg);
+}
+
+.button-div {
+    text-align: center;
+}
+
+.button {
+    background-color: green;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    display: inline-block;
+    transition: all 0.5s;
+}
+
+.button:hover {
+    background-color: lightgreen;
+    transform: scale(1.5);
+    color: black;
+}

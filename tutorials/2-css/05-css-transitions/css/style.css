@@ -1,0 +1,101 @@
+body {
+    animation: change-color 4s infinite alternate;
+}
+
+@keyframes change-color {
+    0% {background-color: antiquewhite;}
+    50% {background-color: yellow;}
+    100% {background-color: aquamarine;}
+}
+
+.title {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    margin: 80px auto;
+    animation: skew 3s infinite alternate;
+}
+
+@keyframes skew {
+    0% {transform: skew(0deg);}
+    100% {transform: skew(30deg, 20deg);}
+}
+
+.square {
+    background-color: pink;
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    margin: 50px auto;
+    transition: all 1s;
+}
+
+.square:hover {
+    background-color: lightblue;
+    transform: rotate(30deg);
+}
+
+.button-div {
+    text-align: center;
+}
+
+.button {
+    background-color: green;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    display: inline-block;
+    transition: all 0.5s;
+}
+
+.button:hover {
+    background-color: lightgreen;
+    transform: scale(1.5);
+    color: black;
+}
+
+.loading {
+    animation: stretch 5s 3 normal;
+    background-color: white;
+    width: 80vw;
+}
+
+@keyframes stretch {
+    0% {width: 100px;}
+    100% {width: 80vw;}
+}
+
+.circle {
+    width: 120px;
+    height: 120px;
+    background-color: purple;
+    border-radius: 50%;
+    margin: 50px auto;
+    transition: all 0.6s ease;
+}
+
+.circle:hover {
+    background-color: orange;
+    transform: scale(1.3) rotate(180deg);
+}
+
+.bouncing-box {
+    width: 80px;
+    height: 80px;
+    background-color: red;
+    margin: 60px auto;
+    border-radius: 15px;
+    animation: bounce 2s infinite ease-in-out;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-100px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
