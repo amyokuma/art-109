@@ -1,0 +1,42 @@
+<!-- index.html -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mood Machine</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="calm">
+    <div class="floaters" aria-hidden="true">
+      <div class="floater"></div>
+      <div class="floater"></div>
+      <div class="floater"></div>
+      <div class="floater"></div>
+    </div>
+
+    <nav>
+      <div class="title">Mood Machine</div>
+      <div class="mood-switcher">
+        <button class="mood-btn active" data-mood="calm">Calm</button>
+        <button class="mood-btn" data-mood="joyful">Joyful</button>
+        <button class="mood-btn" data-mood="anxious">Anxious</button>
+        <button class="mood-btn" data-mood="melancholy">Melancholy</button>
+      </div>
+    </nav>
+
+    <main>
+      <section class="hero">
+        <div class="hero-card">
+          <h1 class="glitch" data-text="I am a room full of tabs.">
+            I am a room full of tabs.
+          </h1>
+          <p>This net art piece imagines emotion as an interface condition.</p>
+          <p>The site currently feels <span id="mood-word">calm</span>.</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="javascript/script.js"></script>
+  </body>
+</html>

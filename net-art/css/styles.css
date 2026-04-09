@@ -1,0 +1,52 @@
+:root {
+  --bg: #111;
+  --fg: #fff;
+  --accent: #8ec5ff;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: Arial, sans-serif;
+  transition: all 0.5s ease;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.mood-btn {
+  margin: 0.25rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calm {
+  --bg: #0f1722;
+  --fg: #eef6ff;
+}
+
+.joyful {
+  --bg: #fff2cd;
+  --fg: #3a2037;
+}
+
+.anxious {
+  --bg: #150d16;
+  --fg: #f7ebff;
+}
+
+.melancholy {
+  --bg: #1f2230;
+  --fg: #dde1f2;
+}
