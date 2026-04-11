@@ -1,42 +1,38 @@
-<!-- index.html -->
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mood Machine</title>
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
-  <body class="calm">
-    <div class="floaters" aria-hidden="true">
-      <div class="floater"></div>
-      <div class="floater"></div>
-      <div class="floater"></div>
-      <div class="floater"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abandoned Tab Archive</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <div class="glitch-overlay"></div>
+  <div id="cursor-trail"></div>
+
+  <header class="site-title">
+    <h1>ABANDONED TAB</h1>
+  </header>
+
+  <main>
+    <div id="tab-desk"></div>
+
+    <div id="viewer" class="viewer hidden">
+      <p id="viewer-text"></p>
     </div>
 
-    <nav>
-      <div class="title">Mood Machine</div>
-      <div class="mood-switcher">
-        <button class="mood-btn active" data-mood="calm">Calm</button>
-        <button class="mood-btn" data-mood="joyful">Joyful</button>
-        <button class="mood-btn" data-mood="anxious">Anxious</button>
-        <button class="mood-btn" data-mood="melancholy">Melancholy</button>
-      </div>
-    </nav>
+    <div id="popup" class="popup hidden">are you still watching?</div>
+  </main>
 
-    <main>
-      <section class="hero">
-        <div class="hero-card">
-          <h1 class="glitch" data-text="I am a room full of tabs.">
-            I am a room full of tabs.
-          </h1>
-          <p>This net art piece imagines emotion as an interface condition.</p>
-          <p>The site currently feels <span id="mood-word">calm</span>.</p>
-        </div>
-      </section>
-    </main>
+  <template id="tab-template">
+    <div class="tab">
+      <span class="title"></span>
+      <span class="progress"></span>
+    </div>
+  </template>
 
-    <script src="javascript/script.js"></script>
-  </body>
+  <script src="javascript/script.js"></script>
+</body>
 </html>
+
