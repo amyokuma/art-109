@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Core Memories</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <main class="app">
+        <header>
+            <div>
+                <h1>Core Memories</h1> 
+                <p class="intro">
+                    A floating archive of small childhood memories. Click a memory bubble to zoom in, then click the
+                    focused scene to move through it frame by frame.
+                </p>
+            </div>
+        </header>
+
+        <section class="stage-wrap">
+            <div class="stage" id="stage" aria-label="Floating childhood memory bubbles">
+
+                <div class="bubble-field" id="bubbleField" aria-label="Choose a memory">
+                    <button class="memory-bubble" type="button" data-scene="0"
+                        style="--x: 8%; --y: 16%; --size: 180px; --delay: 0s;"
+                        aria-label="Open memory: getting lost in the grocery store">
+                        <span class="blank-placeholder bubble-blank">drawing here</span>
+                        <span class="bubble-title">Grocery Store Maze</span>
+                    </button>
+
+                    <button class="memory-bubble" type="button" data-scene="1"
+                        style="--x: 58%; --y: 10%; --size: 210px; --delay: -1.4s;"
+                        aria-label="Open memory: drawing on the foggy car window">
+                        <span class="blank-placeholder bubble-blank">drawing here</span>
+                        <span class="bubble-title">Foggy Car Window</span>
+                    </button>
+
+                    <button class="memory-bubble" type="button" data-scene="2"
+                        style="--x: 25%; --y: 55%; --size: 230px; --delay: -2.1s;"
+                        aria-label="Open memory: the colorful blanket game">
+                        <span class="blank-placeholder bubble-blank">drawing here</span>
+                        <span class="bubble-title">Blanket Game</span>
+                    </button>
+
+                    <button class="memory-bubble" type="button" data-scene="3"
+                        style="--x: 62%; --y: 52%; --size: 180px; --delay: -0.6s;"
+                        aria-label="Open memory: believing in the tooth fairy">
+                        <span class="blank-placeholder bubble-blank">drawing here</span>
+                        <span class="bubble-title">Tooth Fairy</span>
+                    </button>
+
+                    <p class="bubble-instruction">Choose a floating memory.</p>
+                </div>
+
+                <!-- Zoomed memory state -->
+                <div class="focus-view" id="focusView" aria-hidden="true">
+                    <div class="focus-topbar">
+                        <button class="back-btn" id="backBtn" type="button">← All memories</button>
+
+                        <div class="focus-progress" aria-hidden="true">
+                            <span></span>
+                        </div>
+                    </div>
+
+                    <div class="scene-space">
+
+                        <article class="memory-scene" data-scene="0">
+                            <div class="frame-area grocery-scene">
+                                <div class="blank-placeholder scene-blank">drawing here</div>
+                            </div>
+
+                            <aside class="caption-panel">
+                                <div>
+                                    <div class="scene-label">Memory 01</div>
+                                    <h2>Getting lost in the grocery store.</h2>
+                                    <p>
+                                        The aisles felt taller than they really were, stacked with colors, boxes, and
+                                        sounds. For a moment, every turn looked the same, and finding a familiar face
+                                        felt like finding the way back home.
+                                    </p>
+                                </div>
+                            </aside>
+                        </article>
+
+                        <article class="memory-scene" data-scene="1">
+                            <div class="frame-area window-scene">
+                                <div class="blank-placeholder scene-blank">drawing here</div>
+                            </div>
+
+                            <aside class="caption-panel">
+                                <div>
+                                    <div class="scene-label">Memory 02</div>
+                                    <h2>Drawing on the foggy car window.</h2>
+                                    <p>
+                                        Cold glass turned into a blank page. A fingertip made smiley faces, hearts,
+                                        names, and tiny pictures that disappeared as quickly as they were made.
+                                    </p>
+                                </div>
+                            </aside>
+                        </article>
+
+                        <article class="memory-scene" data-scene="2">
+                            <div class="frame-area blanket-scene">
+                                <div class="blank-placeholder scene-blank">drawing here</div>
+                            </div>
+
+                            <aside class="caption-panel">
+                                <div>
+                                    <div class="scene-label">Memory 03</div>
+                                    <h2>The colorful blanket game.</h2>
+                                    <p>
+                                        A bright blanket became more than something soft. It was a tent, a hiding place,
+                                        a stage, a parachute, and sometimes the whole game itself.
+                                    </p>
+                                </div>
+                            </aside>
+                        </article>
+
+                        <article class="memory-scene" data-scene="3">
+                            <div class="frame-area fairy-scene">
+                                <div class="blank-placeholder scene-blank">drawing here</div>
+                            </div>
+
+                            <aside class="caption-panel">
+                                <div>
+                                    <div class="scene-label">Memory 04</div>
+                                    <h2>Believing in the tooth fairy.</h2>
+                                    <p>
+                                        A tiny tooth under the pillow made bedtime feel magical. In the morning, the
+                                        proof was always there: the tooth was gone, and something special had been left
+                                        behind.
+                                    </p>
+                                </div>
+                            </aside>
+                        </article>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
