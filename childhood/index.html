@@ -12,135 +12,106 @@
     <main class="app">
         <header>
             <div>
-                <h1>Core Memories</h1> 
-                <p class="intro">
-                    A floating archive of small childhood memories. Click a memory bubble to zoom in, then click the
-                    focused scene to move through it frame by frame.
-                </p>
+                <img class="title-image" id="titleImage" src="assets/core_memories.png" alt="Core Memories" />
             </div>
         </header>
 
-        <section class="stage-wrap">
-            <div class="stage" id="stage" aria-label="Floating childhood memory bubbles">
+        <div class="stage" id="stage" aria-label="Floating childhood memory bubbles">
 
                 <div class="bubble-field" id="bubbleField" aria-label="Choose a memory">
-                    <button class="memory-bubble" type="button" data-scene="0"
-                        style="--x: 8%; --y: 16%; --size: 180px; --delay: 0s;"
+                    <div class="floating-bubble decorative-bubble" aria-hidden="true"
+                        style="--x: -18%; --y: 4%; --size: 190px; --delay: -0.5s; --rotate: -6deg; --layer: 3;">
+                        <img class="bubble-image" src="assets/bubble.png" alt="" aria-hidden="true" />
+                    </div>
+
+                    <div class="floating-bubble decorative-bubble" aria-hidden="true"
+                        style="--x: 2%; --y: 52%; --size: 150px; --delay: -1.9s; --rotate: 8deg; --layer: 1;">
+                        <img class="bubble-image" src="assets/bubble.png" alt="" aria-hidden="true" />
+                    </div>
+
+                    <button class="memory-bubble floating-bubble" type="button" data-scene="0"
+                        style="--x: -20%; --y: 18%; --size: 300px; --delay: 0s; --rotate: -12deg;"
                         aria-label="Open memory: getting lost in the grocery store">
-                        <span class="blank-placeholder bubble-blank">drawing here</span>
-                        <span class="bubble-title">Grocery Store Maze</span>
+                        <img class="bubble-image" src="assets/bubble.png" alt="" aria-hidden="true" />
+                        <img class="bubble-icon" src="assets/grocery_icon.png" alt="" aria-hidden="true" />
                     </button>
 
-                    <button class="memory-bubble" type="button" data-scene="1"
-                        style="--x: 58%; --y: 10%; --size: 210px; --delay: -1.4s;"
+                    <div class="floating-bubble decorative-bubble" aria-hidden="true"
+                        style="--x: 18%; --y: 8%; --size: 165px; --delay: -2.4s; --rotate: -10deg; --layer: 3;">
+                        <img class="bubble-image" src="assets/bubble.png" alt="" aria-hidden="true" />
+                    </div>
+
+                    <div class="floating-bubble decorative-bubble" aria-hidden="true"
+                        style="--x: 22%; --y: 72%; --size: 145px; --delay: -3.1s; --rotate: 6deg; --layer: 1;">
+                        <img class="bubble-image" src="assets/bubble.png" alt="" aria-hidden="true" />
+                    </div>
+
+                    <button class="memory-bubble floating-bubble" type="button" data-scene="1"
+                        style="--x: 10%; --y: 42%; --size: 330px; --delay: -1.4s; --rotate: 9deg;"
                         aria-label="Open memory: drawing on the foggy car window">
-                        <span class="blank-placeholder bubble-blank">drawing here</span>
-                        <span class="bubble-title">Foggy Car Window</span>
+                        <img class="bubble-image" src="assets/bubble.png" alt="" aria-hidden="true" />
+                        <img class="bubble-icon" src="assets/car_icon.png" alt="" aria-hidden="true" />
                     </button>
 
-                    <button class="memory-bubble" type="button" data-scene="2"
-                        style="--x: 25%; --y: 55%; --size: 230px; --delay: -2.1s;"
+                    <div class="floating-bubble decorative-bubble" aria-hidden="true"
+                        style="--x: 34%; --y: 64%; --size: 185px; --delay: -0.8s; --rotate: 7deg; --layer: 1;">
+                        <img class="bubble-image" src="assets/bubble.png" alt="" aria-hidden="true" />
+                    </div>
+
+                    <div class="floating-bubble decorative-bubble" aria-hidden="true"
+                        style="--x: 42%; --y: 2%; --size: 140px; --delay: -1.1s; --rotate: -7deg; --layer: 3;">
+                        <img class="bubble-image" src="assets/bubble.png" alt="" aria-hidden="true" />
+                    </div>
+
+                    <button class="memory-bubble floating-bubble" type="button" data-scene="2"
+                        style="--x: 48%; --y: 22%; --size: 340px; --delay: -2.1s; --rotate: -8deg;"
                         aria-label="Open memory: the colorful blanket game">
-                        <span class="blank-placeholder bubble-blank">drawing here</span>
-                        <span class="bubble-title">Blanket Game</span>
+                        <img class="bubble-image" src="assets/bubble.png" alt="" aria-hidden="true" />
+                        <img class="bubble-icon" src="assets/parachute_icon.png" alt="" aria-hidden="true" />
                     </button>
 
-                    <button class="memory-bubble" type="button" data-scene="3"
-                        style="--x: 62%; --y: 52%; --size: 180px; --delay: -0.6s;"
+                    <div class="floating-bubble decorative-bubble" aria-hidden="true"
+                        style="--x: 70%; --y: 54%; --size: 175px; --delay: -1.2s; --rotate: -5deg; --layer: 3;">
+                        <img class="bubble-image" src="assets/bubble.png" alt="" aria-hidden="true" />
+                    </div>
+
+                    <div class="floating-bubble decorative-bubble" aria-hidden="true"
+                        style="--x: 62%; --y: 76%; --size: 150px; --delay: -2.2s; --rotate: 5deg; --layer: 1;">
+                        <img class="bubble-image" src="assets/bubble.png" alt="" aria-hidden="true" />
+                    </div>
+
+                    <button class="memory-bubble floating-bubble" type="button" data-scene="3"
+                        style="--x: 86%; --y: 30%; --size: 300px; --delay: -0.6s; --rotate: 11deg;"
                         aria-label="Open memory: believing in the tooth fairy">
-                        <span class="blank-placeholder bubble-blank">drawing here</span>
-                        <span class="bubble-title">Tooth Fairy</span>
+                        <img class="bubble-image" src="assets/bubble.png" alt="" aria-hidden="true" />
+                        <img class="bubble-icon" src="assets/tooth_icon.png" alt="" aria-hidden="true" />
                     </button>
 
-                    <p class="bubble-instruction">Choose a floating memory.</p>
+                    <div class="floating-bubble decorative-bubble" aria-hidden="true"
+                        style="--x: 98%; --y: 6%; --size: 185px; --delay: -2.8s; --rotate: 9deg; --layer: 3;">
+                        <img class="bubble-image" src="assets/bubble.png" alt="" aria-hidden="true" />
+                    </div>
+
+                    <div class="floating-bubble decorative-bubble" aria-hidden="true"
+                        style="--x: 88%; --y: 68%; --size: 160px; --delay: -1.6s; --rotate: -8deg; --layer: 1;">
+                        <img class="bubble-image" src="assets/bubble.png" alt="" aria-hidden="true" />
+                    </div>
+
+                    <div class="floating-bubble decorative-bubble" aria-hidden="true"
+                        style="--x: 106%; --y: 48%; --size: 145px; --delay: -0.9s; --rotate: 10deg; --layer: 3;">
+                        <img class="bubble-image" src="assets/bubble.png" alt="" aria-hidden="true" />
+                    </div>
+
                 </div>
 
                 <!-- Zoomed memory state -->
                 <div class="focus-view" id="focusView" aria-hidden="true">
-                    <div class="focus-topbar">
-                        <button class="back-btn" id="backBtn" type="button">← All memories</button>
-
-                        <div class="focus-progress" aria-hidden="true">
-                            <span></span>
-                        </div>
-                    </div>
-
-                    <div class="scene-space">
-
-                        <article class="memory-scene" data-scene="0">
-                            <div class="frame-area grocery-scene">
-                                <div class="blank-placeholder scene-blank">drawing here</div>
-                            </div>
-
-                            <aside class="caption-panel">
-                                <div>
-                                    <div class="scene-label">Memory 01</div>
-                                    <h2>Getting lost in the grocery store.</h2>
-                                    <p>
-                                        The aisles felt taller than they really were, stacked with colors, boxes, and
-                                        sounds. For a moment, every turn looked the same, and finding a familiar face
-                                        felt like finding the way back home.
-                                    </p>
-                                </div>
-                            </aside>
-                        </article>
-
-                        <article class="memory-scene" data-scene="1">
-                            <div class="frame-area window-scene">
-                                <div class="blank-placeholder scene-blank">drawing here</div>
-                            </div>
-
-                            <aside class="caption-panel">
-                                <div>
-                                    <div class="scene-label">Memory 02</div>
-                                    <h2>Drawing on the foggy car window.</h2>
-                                    <p>
-                                        Cold glass turned into a blank page. A fingertip made smiley faces, hearts,
-                                        names, and tiny pictures that disappeared as quickly as they were made.
-                                    </p>
-                                </div>
-                            </aside>
-                        </article>
-
-                        <article class="memory-scene" data-scene="2">
-                            <div class="frame-area blanket-scene">
-                                <div class="blank-placeholder scene-blank">drawing here</div>
-                            </div>
-
-                            <aside class="caption-panel">
-                                <div>
-                                    <div class="scene-label">Memory 03</div>
-                                    <h2>The colorful blanket game.</h2>
-                                    <p>
-                                        A bright blanket became more than something soft. It was a tent, a hiding place,
-                                        a stage, a parachute, and sometimes the whole game itself.
-                                    </p>
-                                </div>
-                            </aside>
-                        </article>
-
-                        <article class="memory-scene" data-scene="3">
-                            <div class="frame-area fairy-scene">
-                                <div class="blank-placeholder scene-blank">drawing here</div>
-                            </div>
-
-                            <aside class="caption-panel">
-                                <div>
-                                    <div class="scene-label">Memory 04</div>
-                                    <h2>Believing in the tooth fairy.</h2>
-                                    <p>
-                                        A tiny tooth under the pillow made bedtime feel magical. In the morning, the
-                                        proof was always there: the tooth was gone, and something special had been left
-                                        behind.
-                                    </p>
-                                </div>
-                            </aside>
-                        </article>
-
-                    </div>
+                    <div class="focus-content" id="focusContent"></div>
+                    <button class="back-btn" id="backBtn" type="button" aria-label="Go back">
+                        <img class="back-btn-image" src="assets/go_back.png" alt="" aria-hidden="true" />
+                    </button>
                 </div>
-            </div>
-        </section>
+        </div>
     </main>
 
     <script src="script.js"></script>
